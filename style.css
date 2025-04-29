@@ -1,0 +1,160 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0; /* Removi o padding padrão do body para controlar melhor */
+    background-color: #f4f4f4; /* Cor de fundo geral */
+    /* Sugestões para um fundo mais profissional: */
+    /* background-image: url('fundo-abstrato.jpg'); /* Uma imagem de fundo sutil */
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; /* Opcional: fixar o fundo ao rolar */
+    color: #333;
+}
+
+header {
+    background-color: #282828; /* Um tom de preto/cinza escuro para profissionalismo */
+    color: #fff;
+    padding: 1rem 0; /* Reduzi o padding vertical */
+    text-align: center; /* Centralizei o texto do cabeçalho */
+    position: sticky; /* Fixar o topo ao rolar */
+    top: 0;
+    z-index: 100;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column; /* Empilhar os elementos verticalmente em telas menores */
+    align-items: center; /* Centralizar os itens horizontalmente */
+    padding: 0 20px;
+}
+
+/*.logo img {
+    height: 60px; /* Ajuste o tamanho do logo */
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #555;
+}*/
+
+.instrumentos-topo {
+    /* Estilos para a faixa com instrumentos */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo levemente transparente */
+    padding: 0.5rem 0;
+    text-align: center;
+    margin-bottom: 1rem; /* Espaço abaixo da faixa de instrumentos */
+}
+
+.instrumentos-topo img {
+    height: 50px; /* Ajuste o tamanho dos ícones de instrumentos */
+    margin: 0 15px;
+    opacity: 0.8; /* Leve transparência para um toque sutil */
+}
+
+header h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 0.9em;
+    color: #ddd;
+    margin-bottom: 0.5rem;
+}
+
+input[type="search"] {
+    width: calc(100% - 2rem); /* Considerar o padding do body */
+    padding: 0.75rem;
+    margin: 1rem auto; /* Centralizar o input */
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box; /* Garantir que padding não aumente o tamanho */
+}
+
+.song-title {
+    background: #e0f7fa; /* Um tom mais suave */
+    color: #00838f; /* Cor de destaque */
+    padding: 0.8rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15); /* Sombra mais sutil */
+    transition: background-color 0.2s ease;
+}
+
+.song-title:hover {
+    background-color: #b2ebf2;
+}
+
+.song-lyrics {
+    display: none;
+    background: #fff;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    white-space: pre-wrap; /* Manter a formatação do <pre> */
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.song-lyrics b {
+    color: #333; /* Destaque para os títulos das músicas */
+}
+
+.back-button {
+    display: none;
+    margin: 1rem auto; /* Centralizar o botão */
+    background: #00838f; /* Cor de destaque */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: block; /* Para centralizar com margin auto */
+    width: fit-content; /* Largura do conteúdo */
+}
+
+.back-button:hover {
+    background-color: #005f6b;
+}
+
+#songs {
+    padding: 0 1rem; /* Adicionar um pouco de padding nas laterais da lista de músicas */
+}
+
+.song {
+    margin-bottom: 1rem; /* Espaçamento entre as músicas */
+}
+
+@media (max-width: 600px) {
+    body { padding: 0.5rem; }
+    .cabecalho { padding: 0 10px; }
+    .instrumentos-topo img { height: 40px; margin: 0 10px; }
+    header h1 { font-size: 1.5em; }
+    input[type="search"] { width: calc(100% - 1rem); }
+    #songs { padding: 0 0.5rem; }
+}
